@@ -9,25 +9,25 @@ const Navbar = () => {
             href="#"
             className="flex items-center justify-center hover:text-primary-color transition-all ease-in-out w-10 h-10"
           >
-            <i class="ri-home-7-line "></i>
+            <i className="ri-home-7-line "></i>
           </a>
           <a
             href="#about"
             className="flex items-center justify-center hover:text-primary-color transition-all ease-in-out w-10 h-10"
           >
-            <i class="ri-contacts-line"></i>
+            <i className="ri-contacts-line"></i>
           </a>
           <a
             href="#skills"
             className="flex items-center justify-center hover:text-primary-color transition-all ease-in-out w-10 h-10"
           >
-            <i class="ri-file-copy-2-fill"></i>
+            <i className="ri-file-copy-2-fill"></i>
           </a>
           <a
             href="#"
             className="flex items-center justify-center hover:text-primary-color transition-all ease-in-out w-10 h-10"
           >
-            <i class="ri-mail-send-line"></i>
+            <i className="ri-mail-send-line"></i>
           </a>
         </div>
       </div>

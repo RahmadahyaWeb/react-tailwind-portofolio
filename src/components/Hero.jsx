@@ -1,8 +1,24 @@
-import React from "react";
-import HeroImg from "../assets/img/profile.svg";
+import React, { useEffect, useRef } from "react";
 import AboutImg from "../assets/img/about.svg";
+import Typed from "typed.js";
 
 const Hero = () => {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Web Developer", "Laravel Addict"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 400,
+      smartBackspace: true,
+      // showCursor: true,
+      loop: true,
+    });
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
     <section>
       <div className="container mx-auto px-6  text-secondary-color">
@@ -12,11 +28,13 @@ const Hero = () => {
               <h1 className="text-5xl lg:text-6xl font-bold m-0 p-0">
                 Rahmadahya
               </h1>
-              <p className="py-5  text-main-color  ">Laravel Addict</p>
-              <p className="text-main-color mb-9  ">
+              <p className="py-2 text-main-color text-lg">
+                <span ref={el}></span>
+              </p>
+              <p className="text-main-color pb-7 text-lg">
                 I'm Web Developer Who Hates Javascript.
               </p>
-              <a className="px-7 py-3 bg-secondary-color text-primary-color hover:bg-secondary-color/90 transition-colors rounded-full my-5  cursor-pointer">
+              <a className="px-7 py-3 bg-secondary-color text-primary-color hover:bg-secondary-color/90 transition-colors rounded-3xl my-5  cursor-pointer">
                 Contact Me
               </a>
             </div>

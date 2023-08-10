@@ -17,7 +17,7 @@ const Skill = () => {
     { skill: "Node Js", level: "Basic" },
   ];
   return (
-    <section id="skills" className="py-8 min-h-screen">
+    <section id="skills" className="py-10">
       <div className="container px-6 mx-auto max-w-4xl">
         <div className="text-center flex flex-col gap-1 mb-12">
           <h3 className="text-secondary-color text-3xl font-semibold">
@@ -32,8 +32,8 @@ const Skill = () => {
             </h4>
             <div className="grid grid-cols-2 gap-3 mx-auto">
               {dataFrontend.map((frontend) => (
-                <div className="flex gap-2">
-                  <i class="ri-medal-line"></i>
+                <div className="flex gap-2" key={frontend.skill}>
+                  <i className="ri-medal-line"></i>
                   <div className="flex flex-col ">
                     <h3 className="text-base">{frontend.skill}</h3>
                     <span className="text-xs text-primary-color">
@@ -50,8 +50,8 @@ const Skill = () => {
             </h4>
             <div className="grid grid-cols-2 gap-3 mx-auto">
               {dataBackend.map((backend) => (
-                <div className="flex gap-2">
-                  <i class="ri-medal-line"></i>
+                <div className="flex gap-2" key={backend.skill}>
+                  <i className="ri-medal-line"></i>
                   <div className="flex flex-col ">
                     <h3 className="text-base">{backend.skill}</h3>
                     <span className="text-xs text-primary-color">

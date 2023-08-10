@@ -32,9 +32,12 @@ const About = () => {
           <div>
             <div className="grid grid-cols-3 mb-6 gap-2">
               {data.map((data) => (
-                <div className="bg-main-color text-center rounded-3xl">
+                <div
+                  className="bg-main-color text-center rounded-3xl hover:shadow-[3px_3px_white] transition-all duration-300"
+                  key={data.title}
+                >
                   <div className="py-4 lg:py-6">
-                    <i class={`${data.icon} text-xl lg:text-3xl`}></i>
+                    <i className={`${data.icon} text-xl lg:text-3xl`}></i>
                     <div className="text-primary-color">
                       <p className="text-sm lg:text-base font-medium lg:my-1">
                         {data.title}

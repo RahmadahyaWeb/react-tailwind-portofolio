@@ -1,7 +1,9 @@
 import About from "./components/About";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Journey from "./components/Journey";
 import Navbar from "./components/Navbar";
+import Service from "./components/Service";
 import Skill from "./components/Skill";
 import "./index.css";
 
@@ -15,6 +17,8 @@ function App() {
       </div>
       <About />
       <Skill />
+      <Service />
+      <Journey />
     </div>
   );
 }

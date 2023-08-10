@@ -7,8 +7,8 @@ const Header = () => {
         <div className="flex justify-between items-center text-secondary-color font-normal text-lg lg:text-2xl">
           <a href="#">Rahmadahya</a>
           <div className="flex gap-3 lg:gap-6">
-            <a href="" className="text-5xl">
-              <i class="ri-github-fill"></i>
+            <a href="" className="text-4xl lg:text-5xl">
+              <i className="ri-github-fill"></i>
             </a>
           </div>
         </div>

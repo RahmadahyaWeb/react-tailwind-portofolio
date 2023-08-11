@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Journey = () => {
   const [active, setActive] = useState(1);
   return (
-    <section id="skills" className="py-10 min-h-screen">
+    <section id="skills" className="py-10">
       <div className="container px-6 mx-auto max-w-xl">
         <div className="text-center flex flex-col gap-1 mb-12">
           <h3 className="text-secondary-color text-3xl font-semibold">
@@ -18,7 +18,7 @@ const Journey = () => {
               className={
                 active === 1
                   ? "px-7 py-3 bg-main-color text-primary-color transition-colors rounded-3xl cursor-pointer text-lg"
-                  : "px-7 py-3 text-main-color transition-colors rounded-3xl cursor-pointer text-lg"
+                  : "px-7 py-3 text-main-color transition-colors rounded-3xl cursor-pointer text-lg hover:bg-main-color hover:text-primary-color"
               }
               onClick={() => setActive(1)}
             >
@@ -30,7 +30,7 @@ const Journey = () => {
               className={
                 active === 2
                   ? "px-7 py-3 bg-main-color text-primary-color transition-colors rounded-3xl cursor-pointer text-lg"
-                  : "px-7 py-3 text-main-color transition-colors rounded-3xl cursor-pointer text-lg"
+                  : "px-7 py-3 text-main-color transition-colors rounded-3xl cursor-pointer text-lg hover:bg-main-color hover:text-primary-color"
               }
               onClick={() => setActive(2)}
             >

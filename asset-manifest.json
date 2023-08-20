@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-tailwind-portofolio/static/css/main.5353e45f.css",
+    "main.js": "/react-tailwind-portofolio/static/js/main.8e5d760f.js",
+    "static/media/about.svg": "/react-tailwind-portofolio/static/media/about.a493387c30609bf68a9acdca2d311148.svg",
+    "static/media/profile.svg": "/react-tailwind-portofolio/static/media/profile.8ec836ca89d56e63316583aace34e425.svg",
+    "static/media/portofolio.png": "/react-tailwind-portofolio/static/media/portofolio.c75e65bd78015014f42d.png",
+    "static/media/sisami.png": "/react-tailwind-portofolio/static/media/sisami.e59fb424a3e03337ede0.png",
+    "index.html": "/react-tailwind-portofolio/index.html",
+    "main.5353e45f.css.map": "/react-tailwind-portofolio/static/css/main.5353e45f.css.map",
+    "main.8e5d760f.js.map": "/react-tailwind-portofolio/static/js/main.8e5d760f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5353e45f.css",
+    "static/js/main.8e5d760f.js"
+  ]
+}
